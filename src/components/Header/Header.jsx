@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../Navbar/Navbar";
 
 const Header = () => {
     return (
