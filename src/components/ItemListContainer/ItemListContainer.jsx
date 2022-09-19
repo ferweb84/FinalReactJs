@@ -14,7 +14,7 @@ const ItemListContainer = () => {
             setTimeout(() => {
                 let productos = (id) ? Products.filter(producto => producto.categoria === id) : Products;
                 resolve((productos.length > 0) ? productos : Products);
-            }, 2000);
+            }, 1500);
         });
 
         getProductos.then((respuesta) => {
@@ -25,7 +25,7 @@ const ItemListContainer = () => {
     return (
         <div className="container-fluid fondo_amarillo">
             <Header />
-            <div className="container">
+            <div className="header">
                 <ItemList items={items} />
             </div>
             <Footer />    

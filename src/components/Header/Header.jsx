@@ -1,10 +1,12 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
 import NavBar from "../Navbar/Navbar";
+import  "./Header.css";
+
 
 const Header = () => {
     return (
-        <div className="container">
+        <div className="header">
             <div className="row py-3">
                 <div className="col-md-6">
                     <NavBar />

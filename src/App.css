@@ -4,7 +4,9 @@
 }
 
 .fondo_amarillo {
-  background-color: #f5ebd2;
+  background-color: #cf6f01;
+  margin-bottom: 20px;
+  border-bottom: 30px;
 }
 
 .link_header {
@@ -21,9 +23,9 @@
 }
 
 .fondo_rojo {
-  background-color: #d72300;
+  background-color: #c23c22;
 }
 
 .fondo_naranja {
-  background-color: #ff8533;
+  background-color: #e76005;
 }

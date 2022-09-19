@@ -28,10 +28,10 @@ const Provider = ({children}) => {
     }
 
     return (
-        <CartContext.Provider value={{cart, addItem, clear, cartTotal}}>
+        <CartContext.Provider value={{cart, addItem, clear,cartTotal, isInCart}}>
             {children}
         </CartContext.Provider>
     )
 }
-
+//agregue cartTotal al value de isInCart(consultar)
 export default Provider;

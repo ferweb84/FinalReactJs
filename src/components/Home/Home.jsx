@@ -4,11 +4,12 @@ import Footer from "../Footer/Footer";
 import Cupones from "./Cupones";
 import Destacado from "./Destacado";
 import PromoApp from "./PromoApp";
+import  "../Home/Home.css";
 
 const Home = () => {
     return (
-        <div className="container-fluid fondo_amarillo">
-            <Header />
+        <div className="Home">
+            <Header /> 
             <Destacado />
             <Cupones />
             <PromoApp />

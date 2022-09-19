@@ -13,7 +13,7 @@ const ItemDetailsContainer = () => {
         const getProductos = new Promise((resolve) => {
             setTimeout(() => {
                 resolve(Products.find(producto => producto.id === parseInt(id)) || []);
-            }, 2000);
+            }, 1500);
         });
 
         getProductos.then((respuesta) => {
