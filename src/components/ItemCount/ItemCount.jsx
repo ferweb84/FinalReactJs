@@ -24,7 +24,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
         }   
     }
 
-    useEffect(() => { //EL CAMBIO MÁS IMPORTANTE. El stock vía props si está llegando. Pero como esta usando una promesa con una retardo de 2 segundos, el valor cuando se ejecuta todavía no lo tenía. Después de los 2 segundos ahí si obtiene el valor del stock. Como estaba armado anteriormente, cargaba el componente con el valor inicial del stock (que era undefined) y no lo volvía a actualizar. Solución. Utilizar un useEffect para que esté leyendo todo el tiempo el props "stock".
+    useEffect(() => { //EL CAMBIO MÁS IMPORTANTE. El stock vía props si está llegando. Pero como esta usando una promesa con una retardo de 1.5 segundos, el valor cuando se ejecuta todavía no lo tenía. Después de los 1.5 segundos ahí si obtiene el valor del stock. Como estaba armado anteriormente, cargaba el componente con el valor inicial del stock (que era undefined) y no lo volvía a actualizar. Solución. Utilizar un useEffect para que esté leyendo todo el tiempo el props "stock".
         setItemStock(stock);
     }, [stock]);
 

@@ -1,6 +1,11 @@
 .destacado {
     background-color: rgb(20, 156, 156);
-    height: 200px;
-    
+    height: 300px;
+    border-radius: 5px;
 
+}
+.img-destacada{
+    border-radius: 25px;
+    width: 250px;
+    height: 300px;
 }

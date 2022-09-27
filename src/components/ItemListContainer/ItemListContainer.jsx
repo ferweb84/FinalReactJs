@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Products from "../Products/Products";
+import Productos from "../Productos/Productos";
 import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
@@ -12,9 +12,9 @@ const ItemListContainer = () => {
     useEffect(() => {
         const getProductos = new Promise((resolve) => {
             setTimeout(() => {
-                let productos = (id) ? Products.filter(producto => producto.categoria === id) : Products;
-                resolve((productos.length > 0) ? productos : Products);
-            }, 1500);
+                let productos = (id) ? Productos.filter(productos => productos.categoria === id) : Productos;
+                resolve((productos.length > 0) ? productos : Productos);
+            }, 2000);
         });
 
         getProductos.then((respuesta) => {

@@ -7,8 +7,8 @@ const Provider = ({children}) => {
 
     const addItem = (item, cantidad) => {
         if (isInCart(item.id)) {
-            let producto = cart.find(x => x.id === item.id);
-            cart[cart.indexOf(producto)].cantidad += cantidad;
+            let productos = cart.find(x => x.id === item.id);
+            cart[cart.indexOf(productos)].cantidad += cantidad;
             setCart([...cart]);
         } else {
             setCart([...cart, {...item, cantidad:cantidad}]);            

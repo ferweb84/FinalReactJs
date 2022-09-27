@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Products from "../Products/Products";
+import Productos from "../Productos/Productos";
 import ItemDetails from "./ItemDetails";
 
 const ItemDetailsContainer = () => {
@@ -12,7 +12,7 @@ const ItemDetailsContainer = () => {
     useEffect(() => {
         const getProductos = new Promise((resolve) => {
             setTimeout(() => {
-                resolve(Products.find(producto => producto.id === parseInt(id)) || []);
+                resolve(Productos.find(productos => productos.id === parseInt(id)) || []);
             }, 1500);
         });
 
